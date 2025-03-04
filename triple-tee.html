@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triple Tee Package - Jssar's Resort</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="HotelLogo.webp" alt="Hotel Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="icons/OIP.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="icons/591693525.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="icons/20190611043338_course01.png" style="width:100%">
+            </div>
+        </div>
+        <div class="hero-overlay">
+            <h1>Triple Tee Golf Package</h1>
+            <p>Perfect for a short getaway! Play three rounds of 18-hole golf, stay two nights in a deluxe room, and enjoy exclusive perks.</p>
+            <button class="book-now-btn" onclick="scrollToBooking()">Book Now</button>
+        </div>
+    </section>
+
+    <section class="package-details">
+        <h2>Package Includes:</h2>
+        <ul>
+            <li><img src="icons/bomba-clat.png" alt="Golf Icon"> Three 18-hole rounds on championship courses</li>
+            <li><img src="icons/download.png" alt="Room Icon"> Deluxe room accommodation for 2 nights</li>
+            <li><img src="icons/download (1).png" alt="Breakfast Icon"> Complimentary breakfast each morning</li>
+            <li><img src="icons/download (2).png" alt="Cart Icon"> Free golf cart rental</li>
+            <li><img src="icons/download (3).png" alt="Discount Icon"> 20% discount at the Pro Shop</li>
+        </ul>
+        <h2>Price: $999 per person</h2>
+    </section>
+
+    <section class="booking-form" id="booking-form-section">
+        <h2>Book Your Triple Tee Package</h2>
+        <form id="booking-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="checkin-date">Check-in Date:</label>
+            <input type="date" id="checkin-date" name="checkin" required>
+
+            <label for="checkout-date">Check-out Date:</label>
+            <input type="date" id="checkout-date" name="checkout" required>
+
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Jssar's Resort. Contact us at jssarResort@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function scrollToBooking() {
+            document.getElementById('booking-form-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Rounds Package - Jssar's Resort</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="HotelLogo.webp" alt="Hotel Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <video autoplay muted loop class="background-video">
+            <source src="Best 100 Golf Shots Of The Year Part 1 - DP World Tour (1080p, h264) (online-video-cutter.com).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay">
+            <h1>Five Rounds Golf Package</h1>
+            <p>Enjoy five exclusive rounds of golf on our championship courses, luxury accommodation, and more!</p>
+            <button class="book-now-btn" onclick="scrollToBooking()">Book Now</button>
+        </div>
+    </section>
+
+    <section class="package-details">
+        <h2>Package Includes:</h2>
+        <ul>
+            <li>Five 18-hole rounds on premium golf courses</li>
+            <li>Luxury suite accommodation for 5 nights</li>
+            <li>Complimentary digital training session</li>
+            <li>Exclusive discounts on Pro Shop purchases</li>
+            <li>Free golf cart rental</li>
+        </ul>
+        <h2>Price: $1,999 per person</h2>
+    </section>
+
+    <section class="booking-form" id="booking-form-section">
+        <h2>Book Your Five Rounds Package</h2>
+        <form id="booking-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="checkin-date">Check-in Date:</label>
+            <input type="date" id="checkin-date" name="checkin" required>
+
+            <label for="checkout-date">Check-out Date:</label>
+            <input type="date" id="checkout-date" name="checkout" required>
+
+            <label for="sessions">Golf Training Sessions:</label>
+            <select id="sessions" name="sessions">
+                <option value="none">No Training</option>
+                <option value="beginner">Beginner Training</option>
+                <option value="advanced">Advanced Training</option>
+            </select>
+
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Jssar's Resort. Contact us at jssarResort@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function scrollToBooking() {
+            document.getElementById('booking-form-section').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

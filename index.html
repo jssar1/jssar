@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jssar's Resort</title>
+  <link rel="icon" type="hotel" href="HotelLogo.webp">
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Experience luxury at Jssar's Resort. Play golf, unwind in our spa, and enjoy world-class facilities. Book your stay now!">
+  <meta property="og:title" content="Jssar's Resort - Luxury & Golf Experience">
+  <meta property="og:description" content="Enjoy a luxurious stay at Jssar's Resort with top-class golf courses and spa services.">
+  <meta property="og:image" content="https://jssar1.github.io/frontimage.jpg">
+  <meta property="og:url" content="https://jssar1.github.io/">
+  <link rel="canonical" href="https://jssar1.github.io/">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Resort",
+      "name": "Jssar's Resort",
+      "url": "https://jssar1.github.io",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Resort Avenue",
+        "addressLocality": "Your City",
+        "addressCountry": "Your Country"
+      },
+      "telephone": "+1234567890",
+      "priceRange": "$200 - $1000 per night",
+      "openingHours": "Mo-Su 08:00-22:00",
+      "image": "https://jssar1.github.io/logo.jpg",
+      "description": "A luxury golf resort offering world-class facilities, spa, and fine dining.",
+      "amenities": ["Golf Course", "Luxury Suites", "Spa", "Fine Dining"]
+    }
+  </script>
+  <meta property="og:updated_time" content="2025-02-27T12:00:00+00:00" />
+</head>
+<body>
+
+  <!-- Hero Section (with the image background covering the header too) -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <header>
+        <div class="logo">
+          <img src="HotelLogo.webp" alt="Hotel Logo">
+        </div>
+        <button id="menu-toggle" class="menu-toggle">☰</button> <!-- Toggle Button for Mobile -->
+        <nav id="nav-menu">
+          <ul>
+            <li>
+              <a href="index.html">
+                Home
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                  <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+                </svg>
+              </a>
+            </li>
+            <li><a href="#about" style="color: antiquewhite;">About</a></li>
+            <li><a href="#facilities" style="color: antiquewhite;">Facilities</a></li>
+            <li><a href="#packages" style="color: antiquewhite;">Packages</a></li>
+            <li><a href="#testimonials" style="color: antiquewhite;">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Banner Image -->
+      <div class="hotelfrontlogo" id="Home">
+        <img src="FrontPhoto.jpg" alt="Front view of Jssar's Resort">
+      </div>
+      <h1><b><i>Welcome to Jssar's Resort</i></b></h1>
+      <button id="book-now" onclick="openBookingModal()">
+        Book Now
+      </button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+      Jssar's Resort is your ideal destination for relaxation, adventure, and luxury. Whether you’re here to enjoy world-class golf courses, unwind at our luxurious spa, or indulge in fine dining, we have something for everyone.
+    </p>
+    <div class="placeholder-image fade-in">
+      <img src="placeholder.jpg" alt="About Us">
+    </div>
+    <button id="play-about-audio" class="learn-more-btn fade-in">Play About Us Audio</button>
+    <audio id="about-audio" src="Spa-voice.mp3" preload="auto"></audio>
+  </section>
+
+  <!-- Facilities Section -->
+  <section class="facilities" id="facilities">
+    <h2>Facilities</h2>
+  
+    <!-- Facility 1 -->
+    <div class="facility-item">
+      <div class="placeholder-image">
+        <img src="gold-course.jpg" alt="Golf Course">
+      </div>
+      <p>Our championship golf course is designed to challenge golfers of all skill levels.</p>
+      <button class="play-facility-audio learn-more-btn">Play Golf Course Audio</button>
+      <audio class="facility-audio" src="golf-voice.mp3" preload="auto"></audio>
+    </div>
+  
+    <!-- Facility 2 -->
+    <div class="facility-item">
+      <div class="placeholder-image">
+        <img src="Hotel-picute.jpg" alt="Hotel">
+      </div>
+      <p>Relax and enjoy our luxurious hotel rooms with stunning views and exceptional amenities.</p>
+      <button class="play-facility-audio learn-more-btn">Play Hotel Audio</button>
+      <audio class="facility-audio" src="view-voice.mp3" preload="auto"></audio>
+    </div>
+
+    <!-- Facility 3 -->
+    <div class="facility-item">
+      <div class="placeholder-image">
+        <img src="Hotel-restu.webp" alt="Restaurant">
+      </div>
+      <p>Our gourmet restaurant serves a variety of international and local dishes made with the freshest ingredients.</p>
+      <button class="play-facility-audio learn-more-btn">Play Restaurant Audio</button>
+      <audio class="facility-audio" src="restu-voice.mp3" preload="auto"></audio>
+    </div>
+
+    <!-- Facility 4 -->
+    <div class="facility-item">
+      <div class="placeholder-image">
+        <img src="Hotel-spa.jpg" alt="Spa">
+      </div>
+      <p>Unwind at our wellness spa, offering a range of rejuvenating treatments and therapies.</p>
+      <button class="play-facility-audio learn-more-btn">Play Spa Audio</button>
+      <audio class="facility-audio" src="spa1-voice.mp3" preload="auto"></audio>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section class="packages" id="packages">
+    <h2>Packages</h2>
+    <div class="package-card">
+      <h3>Five Rounds</h3>
+      <p>Enjoy five rounds of golf on our championship courses, with a five-night stay in a luxury suite and complimentary digital training session.</p>
+      <button class="learn-more-btn" onclick="window.location.href='five-rounds.html'">Learn More</button>
+    </div>
+    <div class="package-card">
+      <h3>Triple Tee</h3>
+      <p>Perfect for a short getaway! Play three rounds of 18-hole golf, stay two nights in a deluxe room, and receive a 20% discount at our Pro Shop.</p>
+      <button class="learn-more-btn" onclick="window.location.href='triple-tee.html'">Learn More</button>
+    </div>
+    <div class="package-card">
+      <h3>Relaxation Retreat</h3>
+      <p>Unwind with a one-night stay, full breakfast, gourmet dinner, access to our spa and wellness center, and an optional beginner golf session.</p>
+      <button class="learn-more-btn" onclick="window.location.href='relaxation.html'">Learn More</button>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Guests Say</h2>
+    <div class="testimonial">
+      <p>"Amazing experience! The golf course was in perfect condition."</p>
+      <span>- Zaid Mohammed</span>
+    </div>
+    <div class="testimonial">
+      <p>"A luxurious stay with fantastic dining options."</p>
+      <span>- Humam Williams</span>
+    </div>
+    <div class="testimonial">
+      <p>"I had so much fun in there, the food was amazing too."</p>
+      <span>- Khalaf Johnson</span>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2025 Jssar's Resort. All rights reserved. (email: jssarResort@gmail.com) (Phone: +3514546363)</p>
+      </footer>
+
+  <!-- Booking Modal -->
+  <div id="bookingModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeBookingModal()">&times;</span>
+      <h2>Book Your Stay</h2>
+      <form id="booking-form">
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+        <input type="date" id="checkin-date" name="checkin" required />
+        <input type="date" id="checkout-date" name="checkout" required />
+        <button type="submit">Submit Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

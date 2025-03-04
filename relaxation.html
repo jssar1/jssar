@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relaxation Retreat - Jssar's Resort</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="HotelLogo.webp" alt="Hotel Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="FrontPhoto.jpg" alt="">
+        <h1>Relaxation Retreat Package</h1>
+        <p>Escape the stress and indulge in a luxurious retreat with spa treatments, fine dining, and a tranquil resort stay.</p>
+        <button onclick="scrollToBooking()">Book Now</button>
+    </section>
+
+    <section class="package-details">
+        <h2>Package Includes:</h2>
+        <ul>
+            <li>One-night stay in a luxury suite</li>
+            <li>Full gourmet breakfast and fine dining dinner</li>
+            <li>Access to the wellness spa and relaxation lounge</li>
+            <li>Choice of a complimentary massage or yoga session</li>
+            <li>Unlimited access to the resort’s pools and wellness facilities</li>
+        </ul>
+        <h2>Price: $599 per person</h2>
+    </section>
+
+    <section class="booking-form" id="booking-form-section">
+        <h2>Book Your Relaxation Retreat</h2>
+        <form id="booking-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="checkin-date">Check-in Date:</label>
+            <input type="date" id="checkin-date" name="checkin" required>
+
+            <label for="checkout-date">Check-out Date:</label>
+            <input type="date" id="checkout-date" name="checkout" required>
+
+            <label for="spa-treatment">Select a Complimentary Treatment:</label>
+            <select id="spa-treatment" name="spa-treatment">
+                <option value="massage">Massage Therapy</option>
+                <option value="yoga">Yoga & Meditation Session</option>
+            </select>
+
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Jssar's Resort. Contact us at jssarResort@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function scrollToBooking() {
+            document.getElementById('booking-form-section').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

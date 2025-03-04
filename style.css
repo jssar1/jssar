@@ -1,0 +1,539 @@
+/* RESET STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL STYLES */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  line-height: 1.5;
+  padding-top: 80px; /* To prevent header overlap */
+  overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(204, 204, 204, 0.9);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav li {
+  margin-left: 1rem;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #555;
+}
+
+/* MENU TOGGLE (Mobile) */
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* HERO SECTION */
+/* HERO SECTION */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 80px); /* Adjust 80px to match footer height */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+
+.hotelfrontlogo img {
+  width: 85%;
+  height: 100%;
+  object-fit: cover; /* Ensures full coverage */
+}
+
+/* FOOTER */
+footer {
+  padding: 2rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  margin-top: auto;
+  height: 80px; /* Ensure this matches the calc() in .hero */
+}
+
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  z-index: 2;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  z-index: 2;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+.hero button {
+  padding: 0.75rem 1.5rem;
+  background-color: #302e2b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+  border-radius: 5px; /* Add border-radius for rounded corners */
+}
+
+.hero button:hover {
+  background-color: #e68900;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* SECTION STYLES */
+section {
+  padding: 3rem;
+  background-color: #fff;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* ABOUT SECTION */
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 4rem; /* Adjust this value to move the "About Us" section lower */
+}
+
+.about .placeholder-image img {
+  width: 85%;      /* Makes the image stretch to fill the container */
+  height: 100%;     /* Ensures the image stretches to the full height */
+  object-fit: cover; /* Ensures the image fills the container without distortion */
+}
+
+/* PACKAGE DETAILS SECTION */
+.package-details {
+  padding: 3rem;
+  background-color: #f9f9f9;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+.package-details h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.package-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.package-details li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.package-details li img {
+  margin-right: 1rem;
+  width: 24px;
+  height: 24px;
+}
+
+/* BOOKING FORM SECTION */
+.booking-form {
+  padding: 3rem;
+  background-color: #fff;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  background-image: url('form-background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.booking-form h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.booking-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.booking-form input,
+.booking-form select {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.booking-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
+  background-color: #e68900;
+}
+
+/* FACILITIES SECTION */
+.facilities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.facility-item {
+  flex: 1 1 200px;
+  background-color: #fff;
+  padding: 1rem;
+  min-width: 200px;
+}
+
+.facility-item .placeholder-image {
+  margin-bottom: 0.5rem;
+}
+
+.facility-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* PACKAGES SECTION */
+.packages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.package-card {
+  flex: 1 1 200px;
+  background-color: #fff;
+  padding: 1rem;
+  min-width: 200px;
+  border-radius: 8px;
+}
+
+.package-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.package-card button {
+  margin-top: 0.5rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.package-card button:hover {
+  background-color: #555;
+}
+
+/* TESTIMONIALS */
+.testimonials .testimonial {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* FOOTER */
+footer {
+  padding: 2rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  /* Ensures footer stays at the bottom */
+  position: relative;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .social-media {
+  margin-top: 1rem;
+}
+
+footer .social-media a {
+  margin: 0 0.5rem;
+}
+
+footer .social-media img {
+  width: 24px;
+  height: 24px;
+}
+
+footer .social-links {
+  margin-top: 0.5rem;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  margin: 15% auto;
+  padding: 20px;
+  background-color: white;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* LEARN MORE BUTTON */
+.learn-more-btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.learn-more-btn:hover {
+  background-color: #555;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.5rem;
+  }
+  header nav li {
+    margin: 0.5rem 0;
+  }
+  .menu-toggle {
+    display: inline-block;
+  }
+  /* Mobile Navigation */
+  #nav-menu {
+    display: none;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  #nav-menu.active {
+    display: block;
+  }
+  .hero {
+    height: auto;
+    padding: 20px;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero button {
+    font-size: 14px;
+  }
+  .learn-more-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 2rem;
+    margin-bottom: 1rem;
+  }
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+  .facilities {
+    flex-direction: column;
+    align-items: center;
+  }
+  .facility-item {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Initially set opacity to 0 (hidden) */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* Moves element down slightly */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Apply when the element is in view (when the class is added) */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0); /* Moves element back to original position */
+}
+
+/* Default styles apply to desktop by default */
+
+/* Medium Screens (Tablets, Small Laptops) */
+@media (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Small Screens (Mobile Phones) */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul {
+    display: none; /* Hide menu initially */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul.active {
+    display: flex; /* Show when active */
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .hero {
+    height: auto;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .facility-item {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Extra Small Screens (Phones under 480px width) */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .package-card {
+    width: 100%;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
